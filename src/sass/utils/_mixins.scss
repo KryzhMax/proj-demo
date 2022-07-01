@@ -37,3 +37,10 @@
     }
   }
 }
+
+@mixin fonts($fs: 12px, $fw: 500, $lh: 1.5, $ls: 0.03em) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}

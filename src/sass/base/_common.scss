@@ -1,12 +1,14 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
 html {
   box-sizing: border-box;
 }
 
-// body {
-//   font-family: , sans-serif;
-//   color: ;
-//   background-color: ;
-// }
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #907e82;
+  background-color: #fff;
+}
 
 .visually-hidden {
   position: absolute;
