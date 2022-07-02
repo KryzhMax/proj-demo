@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import '~node_modules/modern-normalize/modern-normalize.css';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+:root {
+  --backgroung-accent: #ffb8ca;
+  --backgroung-main: #fff5f6;
+  --background-secondary: #ffffff;
+  --title-main: #d41443;
+  --title-secondary: #ffa5ba;
+  --coffee-color: #f0d1a5;
+  --green-color: #c2e297;
+  --review-color: #fafafa;
+  --grey-text: #907e82;
+  --icon-color: #fea5bb;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --card-item: 3;
+  --card-gap: 32px;
+  --title-ff: "Titan One";
+  --text-ff: "DM Sans", sans-serif;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--card-gap);
+}
+@media (max-width: 767.98px) {
+  .card-set {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .card-set {
+    flex-wrap: nowrap;
+  }
+}
+
+.card-set-item {
+  flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-gap)) / var(--card-item));
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  color: #907e82;
+  background-color: #fff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.customer-reviews {
+  background-color: #fff;
+}
+
+.customer-reviews__text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2.6;
+  display: flex;
+  text-align: center;
+  color: #000000;
+  background-image: repeating-linear-gradient(1px solid #e1e1e1);
+}
+.customer-reviews__text::before {
+  content: "❞";
+  width: 54px;
+  height: 40px;
+  left: 127px;
+  top: 4509px;
+  fill: #e1e1e1;
+}/*# sourceMappingURL=index.css.map */
