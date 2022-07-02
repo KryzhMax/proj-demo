@@ -1,0 +1,19 @@
+.products__pre-title {
+    @include fonts(18px, 400, 1.16, null);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--title-secondary);
+}
+
+.products__title {
+    @include fonts(34px, 400, 1.147, 0.04);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--title-main);
+}
+
+.products__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
