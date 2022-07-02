@@ -1,6 +1,6 @@
 // @import './common';
 
-@import './utils/mixin';
+@import './utils/mixins';
 @import './utils/reset';
 @import './utils/variables';
 
@@ -9,4 +9,12 @@
 @import './base/container';
 @import './base/section';
 
+@import './layouts/header';
+@import './layouts/hero';
 @import './layouts/products';
+@import './layouts/about';
+@import './layouts/advantages';
+@import './layouts/gallery';
+@import './layouts/customer-reviews';
+@import './layouts/contacts';
+@import './layouts/footer';
