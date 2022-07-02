@@ -1,0 +1,65 @@
+.footer {
+  background-color: var(--backgroung-main);
+  padding-top: 40px;
+  @include mq(desc) {
+    padding-top: 60px;
+  }
+}
+
+.footer__title {
+  text-transform: uppercase;
+  font-family: var(--title-ff);
+  max-width: 234px;
+  margin-bottom: 40px;
+}
+
+.footer__title--light {
+  @include fonts($fs: 18px, $fw: 400, $lh: 1.16, $ls: 0.03);
+  color: var(--title-secondary);
+  margin-bottom: 15px;
+}
+
+.footer__title--dark {
+  @include fonts($fs: 34px, $fw: 400, $lh: 1.14, $ls: 0.04em);
+  color: var(--title-main);
+}
+
+.main-contact {
+  display: flex;
+  justify-content: end;
+  @include fonts($fs: 12px, $fw: 700, $lh: 1.83, $ls: 0.01em);
+  padding-bottom: 40px;
+}
+.main-contact--text {
+  color: #000000;
+}
+
+.main-contact--number {
+  color: var(--title-main);
+  text-decoration: none;
+}
+
+.footer-copyright {
+  @include fonts($fs: 14px, $fw: 700, $lh: 1.5, $ls: 0.03em);
+  padding-top: 15px;
+  max-width: 150px;
+  //   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--grey-text);
+}
+
+.social__list {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.social__item:not(:first-child) {
+  margin-left: 29px;
+}
+
+.social__icon {
+  fill: #fea5bb;
+}
