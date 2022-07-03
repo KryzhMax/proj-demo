@@ -64,6 +64,13 @@
   color: #ffffff;
 }
 
+.products__name::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/desk-coffee-368.png);
+}
+
 .products__name::after {
   content: '';
   display: flex;
