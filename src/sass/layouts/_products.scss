@@ -80,7 +80,7 @@
   @include mq(mob) {
     width: 280px;
     height: 280px;
-    background-image: url(../images/mob-milkshake-280.png);
+    background-image: url(../images/products/mob-milkshake-280.png);
   }
   @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
     screen and (max-width: 767px) and (-moz-min-device-pixel-ratio: 2),
@@ -88,12 +88,12 @@
     screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
     screen and (max-width: 767px) and (min-resolution: 192dpi),
     screen and (max-width: 767px) and (min-resolution: 2dppx) {
-    background-image: url(../images/mob-milkshake-560@2x.png);
+    background-image: url(../images/products/mob-milkshake-560@2x.png);
   }
   @include mq(tab) {
     width: 224px;
     height: 224px;
-    background-image: url(../images/tab-milkshake-224.png);
+    background-image: url(../images/products/tab-milkshake-224.png);
   }
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2),
@@ -101,12 +101,12 @@
     screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
     screen and (min-width: 768px) and (min-resolution: 192dpi),
     screen and (min-width: 768px) and (min-resolution: 2dppx) {
-    background-image: url(../images/tab-milkshake-448@2x.png);
+    background-image: url(../images/products/tab-milkshake-448@2x.png);
   }
   @include mq(desc) {
     width: 368px;
     height: 394px;
-    background-image: url(../images/desk-milkshake-368.png);
+    background-image: url(../images/products/desk-milkshake-368.png);
   }
   @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 1200px) and (-moz-min-device-pixel-ratio: 2),
@@ -114,7 +114,7 @@
     screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
     screen and (min-width: 1200px) and (min-resolution: 192dpi),
     screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-    background-image: url(../images/desk-milkshake-736@2x.png);
+    background-image: url(../images/products/desk-milkshake-736@2x.png);
   }
 }
 
@@ -129,7 +129,7 @@
   @include mq(mob) {
     width: 280px;
     height: 280px;
-    background-image: url(../images/mob-coffee-280.png);
+    background-image: url(../images/products/mob-coffee-280.png);
   }
   @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
     screen and (max-width: 767px) and (-moz-min-device-pixel-ratio: 2),
@@ -137,12 +137,12 @@
     screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
     screen and (max-width: 767px) and (min-resolution: 192dpi),
     screen and (max-width: 767px) and (min-resolution: 2dppx) {
-    background-image: url(../images/mob-coffee-560@2x.png);
+    background-image: url(../images/products/mob-coffee-560@2x.png);
   }
   @include mq(tab) {
     width: 224px;
     height: 224px;
-    background-image: url(../images/tab-coffee-224.png);
+    background-image: url(../images/products/tab-coffee-224.png);
   }
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2),
@@ -150,12 +150,12 @@
     screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
     screen and (min-width: 768px) and (min-resolution: 192dpi),
     screen and (min-width: 768px) and (min-resolution: 2dppx) {
-    background-image: url(../images/tab-coffee-448@2x.png);
+    background-image: url(../images/products/tab-coffee-448@2x.png);
   }
   @include mq(desc) {
     width: 368px;
     height: 394px;
-    background-image: url(../images/desk-coffee-368.png);
+    background-image: url(../images/products/desk-coffee-368.png);
   }
   @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 1200px) and (-moz-min-device-pixel-ratio: 2),
@@ -163,7 +163,7 @@
     screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
     screen and (min-width: 1200px) and (min-resolution: 192dpi),
     screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-    background-image: url(../images/desk-coffee-736@2x.png);
+    background-image: url(../images/products/desk-coffee-736@2x.png);
   }
 }
 
@@ -178,7 +178,7 @@
   @include mq(mob) {
     width: 280px;
     height: 280px;
-    background-image: url(../images/mob-choco-280.png);
+    background-image: url(../images/products/mob-choco-280.png);
   }
   @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
     screen and (max-width: 767px) and (-moz-min-device-pixel-ratio: 2),
@@ -186,12 +186,12 @@
     screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
     screen and (max-width: 767px) and (min-resolution: 192dpi),
     screen and (max-width: 767px) and (min-resolution: 2dppx) {
-    background-image: url(../images/mob-choco-560@2x.png);
+    background-image: url(../images/products/mob-choco-560@2x.png);
   }
   @include mq(tab) {
     width: 224px;
     height: 224px;
-    background-image: url(../images/tab-choco-224.png);
+    background-image: url(../images/products/tab-choco-224.png);
   }
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2),
@@ -199,12 +199,12 @@
     screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
     screen and (min-width: 768px) and (min-resolution: 192dpi),
     screen and (min-width: 768px) and (min-resolution: 2dppx) {
-    background-image: url(../images/tab-choco-448@2x.png);
+    background-image: url(../images/products/tab-choco-448@2x.png);
   }
   @include mq(desc) {
     width: 368px;
     height: 394px;
-    background-image: url(../images/desk-choco-368.png);
+    background-image: url(../images/products/desk-choco-368.png);
   }
   @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 1200px) and (-moz-min-device-pixel-ratio: 2),
@@ -212,7 +212,7 @@
     screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
     screen and (min-width: 1200px) and (min-resolution: 192dpi),
     screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-    background-image: url(../images/desk-choco-736@2x.png);
+    background-image: url(../images/products/desk-choco-736@2x.png);
   }
 }
 
@@ -237,7 +237,7 @@
   content: '';
   display: flex;
   flex-direction: column;
-  background-image: url(../images/white-dots.png);
+  background-image: url(../images/products/white-dots.png);
   justify-content: center;
   width: 26px;
   height: 6px;
@@ -270,8 +270,4 @@
   margin-top: 32px;
 
   background-color: #ffffff;
-}
-
-.products__picture {
-  margin-top: -50%;
 }
