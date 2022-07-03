@@ -1,0 +1,76 @@
+.advantages-section {
+    background-color: var(--backgroung-main);
+}
+
+
+
+.advantages__item {
+    @include mq(tab) {
+        // width: 224px;
+            flex-basis: calc((100% - 180px) / 3);
+    }
+
+    &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+    &::before {
+    content: '';
+    display: inline-block;
+    margin-bottom: 16px;
+      }
+
+    &-first::before {
+              width: 33px;
+              height: 50px;
+              background-image: url(../images/advantages/ad-1.png);
+          }
+
+    &-second::before {
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/advantages/ad-2.png);
+   }
+
+   &-third::before {
+       width: 44px;
+       height: 50px;
+       background-image: url(../images/advantages/ad-3.png);
+   }
+}
+
+
+.advantages__number {
+    margin-bottom: 4px;
+    display: flex;
+    min-width: 98px;
+    min-height: 56px;
+    @include fonts($fs: 34px, $fw: 400, $lh: 1.14, $ls: 0.04em);
+        color: var(--title-main);
+        text-transform: uppercase;
+            font-family: var(--title-ff);
+    @include mq(tab) {
+            @include fonts($fs: 48px, $fw: 400, $lh: 1.15);
+        }
+
+                                  @include mq(desc) {
+                                      @include fonts($fs: 58px, $fw: 400, $lh: 1.13);
+                                  }
+                                  
+
+}
+
+
+.advantages__text {
+    @include fonts($fs: 12px, $fw: 700, $lh: 1.7);
+    color: #000;
+
+    @include mq(tab) {
+    @include fonts($fs: 14px);
+    }
+
+     @include mq(desc) {
+            @include fonts($fs: 16px);
+     }
+
+}
