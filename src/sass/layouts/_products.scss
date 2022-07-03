@@ -1,0 +1,273 @@
+.products__pre-title {
+  @include fonts(18px, 400, 1.16, null);
+  font-family: 'Titan One';
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--title-secondary);
+
+  @include mq(tab) {
+    @include fonts(26px, 400, 1.15, null);
+  }
+  @include mq(desc) {
+    @include fonts(30px, 400, 1.1333, 0.04em);
+  }
+}
+
+.products__title {
+  @include fonts(34px, 400, 1.147, 0.04em);
+  font-family: 'Titan One';
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--title-main);
+  @include mq(tab) {
+    @include fonts(48px, 400, 1.145, 0.04em);
+  }
+  @include mq(desc) {
+    @include fonts(58px, 400, 1.138, 0.06em);
+    margin-top: 16px;
+  }
+}
+
+.products__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  @include mq(mob-only) {
+    flex-direction: column;
+    padding-top: 148px;
+    gap: 0px;
+  }
+  @include mq(tab-only) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 158px;
+    gap: 16px;
+  }
+  @include mq(desc) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 200px;
+    gap: 32px;
+  }
+}
+
+.products__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 24px;
+  padding-bottom: 40px;
+  @include mq(desc) {
+    padding-bottom: 60px;
+  }
+}
+
+.products__item::before {
+  content: '';
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -50%;
+}
+
+.products__item:nth-child(1) {
+  background-color: var(--backgroung-accent);
+}
+
+.products__item:nth-child(1)::before {
+  @include mq(mob) {
+    width: 280px;
+    height: 280px;
+    background-image: url(../images/products/mob-milkshake-280.png);
+  }
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-moz-min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (min-resolution: 192dpi),
+    screen and (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url(../images/products/mob-milkshake-560@2x.png);
+  }
+  @include mq(tab) {
+    width: 224px;
+    height: 224px;
+    background-image: url(../images/products/tab-milkshake-224.png);
+  }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    background-image: url(../images/products/tab-milkshake-448@2x.png);
+  }
+  @include mq(desc) {
+    width: 368px;
+    height: 394px;
+    background-image: url(../images/products/desk-milkshake-368.png);
+  }
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (-moz-min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    background-image: url(../images/products/desk-milkshake-736@2x.png);
+  }
+}
+
+.products__item:nth-child(2) {
+  background-color: var(--coffee-color);
+  @include mq(mob-only) {
+    margin-top: 148px;
+  }
+}
+
+.products__item:nth-child(2)::before {
+  @include mq(mob) {
+    width: 280px;
+    height: 280px;
+    background-image: url(../images/products/mob-coffee-280.png);
+  }
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-moz-min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (min-resolution: 192dpi),
+    screen and (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url(../images/products/mob-coffee-560@2x.png);
+  }
+  @include mq(tab) {
+    width: 224px;
+    height: 224px;
+    background-image: url(../images/products/tab-coffee-224.png);
+  }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    background-image: url(../images/products/tab-coffee-448@2x.png);
+  }
+  @include mq(desc) {
+    width: 368px;
+    height: 394px;
+    background-image: url(../images/products/desk-coffee-368.png);
+  }
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (-moz-min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    background-image: url(../images/products/desk-coffee-736@2x.png);
+  }
+}
+
+.products__item:nth-child(3) {
+  background-color: var(--green-color);
+  @include mq(mob-only) {
+    margin-top: 148px;
+  }
+}
+
+.products__item:nth-child(3)::before {
+  @include mq(mob) {
+    width: 280px;
+    height: 280px;
+    background-image: url(../images/products/mob-choco-280.png);
+  }
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-moz-min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (min-resolution: 192dpi),
+    screen and (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url(../images/products/mob-choco-560@2x.png);
+  }
+  @include mq(tab) {
+    width: 224px;
+    height: 224px;
+    background-image: url(../images/products/tab-choco-224.png);
+  }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    background-image: url(../images/products/tab-choco-448@2x.png);
+  }
+  @include mq(desc) {
+    width: 368px;
+    height: 394px;
+    background-image: url(../images/products/desk-choco-368.png);
+  }
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (-moz-min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    background-image: url(../images/products/desk-choco-736@2x.png);
+  }
+}
+
+.products__name {
+  @include fonts(20px, 400, 1.15, 0.04em);
+  font-family: 'Titan One';
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+
+  color: #ffffff;
+
+  @include mq(tab) {
+    margin-top: 32px;
+  }
+  @include mq(desc) {
+    @include fonts(30px, 400, 1.1333, 0.04em);
+  }
+}
+
+.products__name::after {
+  content: '';
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/products/white-dots.png);
+  justify-content: center;
+  width: 26px;
+  height: 6px;
+  margin: 32px auto;
+}
+
+.products__text {
+  @include fonts(14px, 700, 1.52, 0.04);
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  color: #ffffff;
+
+  @include mq(tab) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @include mq(desc) {
+    @include fonts(16px, 700, 1.76, 0.04em);
+  }
+}
+
+.products__link {
+  display: flex;
+  align-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 32px;
+
+  background-color: #ffffff;
+}
