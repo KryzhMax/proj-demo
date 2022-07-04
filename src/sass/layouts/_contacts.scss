@@ -1,3 +1,9 @@
+.contacts {
+  @include mq(noDesc) {
+    padding: 0;
+  }
+}
+
 .card__item {
   padding: 40px 32px;
   @include fonts($fs: 12px, $fw: 500, $lh: 1.8, $ls: 0.04em);
@@ -61,22 +67,40 @@
 
 .connect {
   margin-top: 32px;
+  @include mq(tab) {
+    margin-top: 60px;
+  }
   text-align: center;
+  @include mq(tab) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .connect__item + .connect__item {
-  margin-top: 10px;
+  @include mq(mob-only) {
+    margin-top: 10px;
+  }
+  @include mq(tab) {
+    margin-left: 15px;
+  }
 }
 
 .connect__button {
   @include fonts($fs: 16px, $fw: 700, $lh: 1.31, $ls: 0.02em);
 
   color: var(--background-secondary);
-  width: 162px;
-  height: 44px;
+  @include mq(mob-only) {
+    width: 162px;
+    height: 44px;
+  }
   background-color: var(--title-main);
   border-radius: 22px;
   border: 1px solid transparent;
+  @include mq(tab) {
+    padding: 10px 35px;
+  }
 }
 
 .connect__button.franchise {
