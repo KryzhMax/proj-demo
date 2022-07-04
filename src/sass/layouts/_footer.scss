@@ -100,7 +100,7 @@
 
 .social__link:hover .social__icon,
 .social__link:focus .social__icon {
-  transform: scale(1.5);
+  fill: var(--title-main);
 }
 
 .social__item:not(:first-child) {
@@ -113,5 +113,5 @@
 
 .social__icon {
   fill: var(--icon-color);
-  transition: transform var(--transition);
+  transition: fill var(--transition);
 }
