@@ -11,11 +11,4 @@
     });
     // console.log(parentElem);
   });
-  //   refs.openTextBtn.addEventListener('click', toggleModal);
-  //   refs.openModalBtnMob.addEventListener('click', toggleModal);
-  //   refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  //   function toggleModal() {
-  //     refs.modal.classList.toggle('backdrop--hidden');
-  //   }
 })();
