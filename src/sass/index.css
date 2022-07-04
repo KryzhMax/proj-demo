@@ -115,7 +115,7 @@ body {
 }
 
 .custrev {
-  padding: 15px;
+  color: red;
 }
 
 .custrev__client {
@@ -126,12 +126,7 @@ body {
 }
 
 .custrev__box {
-  position: absolute;
   height: 308px;
-  left: 20px;
-  right: 20px;
-  padding-left: 46px;
-  padding-right: 54px;
   background-color: #fafafa;
 }
 
@@ -139,6 +134,7 @@ body {
   font-size: 12px;
   font-weight: 500;
   line-height: 2.6;
+  margin: auto;
   width: 157px;
   height: 239px;
   text-align: center;
@@ -146,12 +142,12 @@ body {
   background-image: -webkit-repeating-linear-gradient(top, transparent 0px, transparent 19px, #e1e1e1 1px, transparent 20px);
 }
 .custrev__text::before {
-  content: url(../images/cust-revi/quote.png);
+  content: url(../images/cust-revi/quotes.png);
 }
 
 .custrev__slider {
   margin-top: 16px;
-  left: 74pxpx;
+  left: 74px;
   right: 74px;
 }
 
@@ -161,4 +157,7 @@ body {
   line-height: 1.8;
   text-align: center;
   color: #000000;
+}
+.custrev__slider-text::before {
+  content: url(../images/cust-revi/points.png);
 }/*# sourceMappingURL=index.css.map */

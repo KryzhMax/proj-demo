@@ -1,0 +1,137 @@
+.custrev {
+  color: red;
+}
+.custrev__client {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+}
+.custrev__box {
+  height: 308px;
+  // left: 20px;
+  // right: 20px;
+  // padding: 30px 50px 17px;
+
+  background-color: #fafafa;
+}
+.custrev__wrapper {
+  position: relative;
+  margin-bottom: 33px;
+}
+.custrev__text {
+  @include fonts(12px, 500, 2.6, null);
+  margin: auto;
+  width: 157px;
+  height: 239px;
+  text-align: center;
+  color: #000000;
+
+  background-position: 0 100%;
+
+  background-image: repeating-linear-gradient(
+    0deg,
+    #e1e1e1 0 1px,
+    transparent 1px 30px
+  );
+
+  &::before {
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    content: '';
+    display: inline-block;
+    width: 54px;
+    height: 40px;
+    background-image: url(../images/cust-revi/quotes.png);
+  }
+}
+
+// .custrev__slider {
+//   margin-top: 16px;
+//   left: 74px;
+//   right: 74px;
+// }
+.custrev__slider-text {
+  @include fonts(14px, 500, 1.8, null);
+  text-align: center;
+  color: #000000;
+  &::before {
+    content: '';
+    width: 32px;
+    height: 4px;
+    background-image: url(../images/cust-revi/points.png);
+    flex-direction: column;
+    justify-content: center;
+    margin: 16px auto;
+    display: flex;
+  }
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  // font-size: 18px;
+  // background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: auto;
+}
+
+// p {
+//   font: 12px/20px Arial;
+
+//   background-image: -webkit-repeating-linear-gradient(
+//     top,
+//     transparent 0px,
+//     transparent 19px,
+//     #000 19px,
+//     transparent 20px
+//   );
+// }
+
+// .customer-reviews {
+//   background-color: #fff;
+// }
+// .customer-reviews__text {
+//   @include fonts(12px, 500, 2.6, null);
+
+//   // padding-top: 43px;
+//   // padding-bottom: 26px;
+//   // padding-right: 58px;
+//   // padding-left: 65px;
+//   // display: flex;
+//   text-align: center;
+//   color: #000000;
+//   background-image: repeating-linear-gradient(#000, #e1e1e1);
+
+// &::before {
+//   content: '\275E';
+//   width: 54px;
+//   height: 40px;
+//   left: 127px;
+//   top: 4509px;
+//   fill: #e1e1e1;
+// }
+// }
