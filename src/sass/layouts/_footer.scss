@@ -1,10 +1,14 @@
 .footer {
-  background-color: var(--backgroung-main);
+  background-color: var(--background-main);
 }
 
 .footer__wrapper {
   padding-top: 40px;
   padding-bottom: 40px;
+  @include mq(desc) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   border-bottom: 1px solid #e1e1e1;
 }
 
@@ -94,6 +98,11 @@
   margin-bottom: 40px;
 }
 
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  fill: var(--title-main);
+}
+
 .social__item:not(:first-child) {
   margin-left: 29px;
 }
@@ -103,5 +112,6 @@
 }
 
 .social__icon {
-  fill: #fea5bb;
+  fill: var(--icon-color);
+  transition: fill var(--transition);
 }

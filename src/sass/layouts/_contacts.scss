@@ -1,9 +1,24 @@
+.contacts {
+  background-image: linear-gradient(to top, #fff5f6 78%, #ffffff 22%);
+
+  @include mq(tab-only) {
+    background-image: linear-gradient(to top, #fff5f6 55%, #ffffff 45%);
+  }
+
+  @include mq(noDesc) {
+    padding: 0;
+  }
+}
+
 .card__item {
   padding: 40px 32px;
-  @include fonts($fs: 12px, $fw: 500, $lh: 1.8, $ls: 0.04em);
+
   background: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  @include mq(desc) {
+    padding: 40px;
+  }
 }
 .card__item + .card__item {
   @include mq(mob-only) {
@@ -12,16 +27,37 @@
 }
 
 .category__name {
+  @include fonts($fs: 12px, $fw: 500, $lh: 1.8, $ls: 0.04em);
+  @include mq(tab) {
+    @include fonts($fs: 16px, $fw: 500, $lh: 1.8, $ls: 0.04em);
+  }
+
   display: inline-block;
   margin-bottom: 20px;
+
   color: var(--background-secondary);
-  padding: 0 30px;
+  padding: 0 25px;
+
   background-color: var(--coffee-color);
   border-radius: 4px;
+  @include mq(tab) {
+    padding: 0 15px;
+    margin-bottom: 32px;
+  }
 }
 
 .card__item:nth-child(even) .category__name {
   background-color: var(--green-color);
+}
+
+.card__content {
+  @include fonts($fs: 12px, $fw: 500, $lh: 1.5, $ls: 0.04em);
+  @include mq(tab) {
+    @include fonts($fs: 14px, $fw: null, $lh: null, $ls: null);
+  }
+  @include mq(desc) {
+    @include fonts($fs: 16px, $fw: null, $lh: null, $ls: null);
+  }
 }
 
 .card__content,
@@ -29,20 +65,30 @@
   padding-bottom: 24px;
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 24px;
+  @include mq(tab) {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .card__city {
   color: #000000;
   margin-bottom: 8px;
 }
-.card__text {
-  @include mq(mob-only) {
-    max-width: 210px;
+
+.schedule__item {
+  @include fonts($fs: 12px, $fw: 500, $lh: 1.84, $ls: 0.04em);
+
+  @include mq(tab) {
+    @include fonts($fs: 14px, $fw: null, $lh: null, $ls: null);
+  }
+  @include mq(desc) {
+    @include fonts($fs: 16px, $fw: null, $lh: null, $ls: null);
   }
 }
 
 .schedule__item + .schedule__item {
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .schedule--day {
@@ -53,30 +99,64 @@
   color: var(--title-secondary);
 }
 
+.card__contact {
+  @include fonts($fs: 12px, $fw: 500, $lh: 1.5, $ls: 0.04em);
+  @include mq(tab) {
+    @include fonts($fs: 14px, $fw: null, $lh: null, $ls: null);
+  }
+  @include mq(desc) {
+    @include fonts($fs: 16px, $fw: null, $lh: null, $ls: null);
+  }
+}
+
 .card__link {
-  @include fonts($fs: 12px, $fw: 500, $lh: 1.8, $ls: 0.04em);
+  display: block;
+
   text-decoration: none;
   color: var(--grey-text);
+  transition: color var(--transition);
+  &:hover,
+  &:focus {
+    color: var(--title-main);
+  }
 }
 
 .connect {
   margin-top: 32px;
+  @include mq(tab) {
+    margin-top: 60px;
+  }
   text-align: center;
+  @include mq(tab) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .connect__item + .connect__item {
-  margin-top: 10px;
+  @include mq(mob-only) {
+    margin-top: 10px;
+  }
+  @include mq(tab) {
+    margin-left: 15px;
+  }
 }
 
 .connect__button {
   @include fonts($fs: 16px, $fw: 700, $lh: 1.31, $ls: 0.02em);
-
+  cursor: pointer;
   color: var(--background-secondary);
-  width: 162px;
-  height: 44px;
+  @include mq(mob-only) {
+    width: 162px;
+    height: 44px;
+  }
   background-color: var(--title-main);
   border-radius: 22px;
   border: 1px solid transparent;
+  @include mq(tab) {
+    padding: 10px 35px;
+  }
 }
 
 .connect__button.franchise {
@@ -91,7 +171,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: grey;
+  background-color: var(--background-main);
   // background-color: var(--backdrop-color);
   opacity: 1;
   visibility: visible;
@@ -104,19 +184,16 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%);
   opacity: 1;
   visibility: visible;
-  transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 350ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 650ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 40px;
-  max-width: 400px;
-  height: 80vh;
-  @include mq(desc) {
-    max-width: 528px;
-  }
-  width: 100%;
+  max-height: 800px;
+  height: 90vh;
+  max-width: 800px;
+  width: 90vw;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -132,7 +209,7 @@
 .backdrop.is-hidden .modal {
   visibility: hidden;
   opacity: 0;
-  transform: translate(-50%, -50%) scale(0.3);
+  transform: translate(-50%, -50%);
 }
 
 .button__close {
@@ -155,11 +232,22 @@
 .button__icon {
   width: 18px;
   height: 18px;
-  fill: var(--black-color);
+  fill: var(--title-main);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .button__close:hover &,
   .button__close:focus & {
     fill: var(--hover-text-color);
   }
+}
+
+.icon-more {
+  fill: currentColor;
+  margin-left: 8px;
+  @include mq(tab) {
+    margin-left: 14px;
+  }
+}
+.icon-more1 {
+  fill: red;
 }
