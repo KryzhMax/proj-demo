@@ -54,10 +54,26 @@ header {
     line-height: 1.31;
 
     @include mq(mob-only) {
-        display: none;
+        // display: none;
+        width: auto;
+        background-color: transparent;
     }
 
+    @include mq(tab-only) {
+        // display: block;
+        background-color: transparent;
+        width: auto;
+    }
+}
 
+// .header__buttons:hover {
+//     @include mq(mob-only) {
+//         stroke: #ffffff
+//     }
+
+.mobile-nav__btn:focus,
+.mobile-nav__btn:hover {
+    stroke: #fff;
 }
 
 .logo {
@@ -151,7 +167,7 @@ header {
 
 
     @include mq(tab) {
-        margin-right: 30px;
+        margin-right: 32px;
     }
 
     @include mq(desc) {
@@ -227,7 +243,14 @@ header {
 
     @include mq(desc) {
         display: block;
+        width: 159px;
     }
+}
+
+.btn-icon {
+    margin-left: 12px;
+    color: #d41443;
+    stroke: #d41443;
 }
 
 .header__btn--mobile {
@@ -236,12 +259,13 @@ header {
 
     font-family: inherit;
     text-align: center;
-
+    stroke: #d41443;
     color: #d41443;
     border: none;
     cursor: pointer;
 
     width: 209px;
+    height: 44px;
     margin-bottom: 32px;
 
     border-radius: 22px;
@@ -256,6 +280,7 @@ header {
 
     @include mq(tab) {
         width: 186px;
+        margin-left: 14px;
     }
 }
 
@@ -266,7 +291,16 @@ header {
     background-color: #d41443;
     color: #ffffff;
     fill: #ffffff;
+    stroke: #ffffff;
 }
+
+.header__btn:hover .btn-icon,
+.header__btn--mobile:hover .btn-icon,
+.header__btn:focus .btn-icon,
+.header__btn--mobile:focus .btn-icon {
+    stroke: #ffffff;
+}
+
 
 .site-nav {
     display: none;
@@ -309,4 +343,17 @@ header {
 
 .site-nav__link--mobile {
     font-size: 14px;
+}
+
+.gradient {
+    position: absolute;
+    top: 123px;
+    left: 0;
+    height: 210px;
+    width: 250px;
+    background-image: repeating-linear-gradient(0deg, #e18298 0 1px, transparent 1px 42px);
+
+    @include mq(tab-only) {
+        width: 254px;
+    }
 }

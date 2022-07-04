@@ -3,12 +3,12 @@
     position: relative;
     background: #ffb8ca;
     height: 502px;
-    overflow: auto;
+    overflow: hidden;
 
     z-index: 1;
 
     @include mq(tab-only) {
-        max-height: 399px;
+        max-height: 416px;
     }
 
     @include mq(desc) {
@@ -27,6 +27,11 @@
 }
 
 .hero__container {
+    @include mq(mob-only) {
+        outline: none;
+        max-width: 320px;
+    }
+
     @include mq(tab) {
         display: flex;
         justify-content: space-between;
@@ -67,7 +72,7 @@
         display: block;
         position: absolute;
         left: 546px;
-        bottom: 0;
+        bottom: -15px;
     }
 
     @include mq(desc) {
@@ -447,6 +452,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
 .hero__button_arrow {
     display: none;
 
@@ -473,11 +480,16 @@
     }
 }
 
+
 .hero__button_made:hover,
-.hero__button_arrow:hover,
-.hero__button_made:focus,
-.hero__button_arrow:focus {
+.hero__button_made:focus {
     background-color: #d41443;
     color: #ffffff;
     fill: #ffffff;
+}
+
+.hero__button_arrow:hover,
+.hero__button_arrow:focus {
+    transform: rotateZ(90deg);
+
 }
