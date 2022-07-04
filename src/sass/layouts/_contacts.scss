@@ -58,3 +58,28 @@
   text-decoration: none;
   color: var(--grey-text);
 }
+
+.connect {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.connect__item + .connect__item {
+  margin-top: 10px;
+}
+
+.connect__button {
+  @include fonts($fs: 16px, $fw: 700, $lh: 1.31, $ls: 0.02em);
+
+  color: var(--background-secondary);
+  width: 162px;
+  height: 44px;
+  background-color: var(--title-main);
+  border-radius: 22px;
+  border: 1px solid transparent;
+}
+
+.connect__button.franchise {
+  color: var(--title-main);
+  background-color: var(--background-secondary);
+}
