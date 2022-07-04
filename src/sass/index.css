@@ -648,24 +648,15 @@ body {
 }
 
 .about__titles {
-  width: 200px;
-  margin-left: 36px;
-  margin-right: 44px;
   margin-bottom: 32px;
 }
 @media (min-width: 768px) {
   .about__titles {
-    width: 429px;
-    margin-left: 170px;
-    margin-right: 169px;
     margin-bottom: 40px;
   }
 }
 @media (min-width: 1200px) {
   .about__titles {
-    width: 534px;
-    margin-left: 333px;
-    margin-right: 333px;
     margin-bottom: 60px;
   }
 }
