@@ -36,20 +36,17 @@ header {
 .header__buttons {
     display: inline-flex;
     align-items: center;
-
-    // display: block;
-
-    background-color: #fff;
+    background-color: var(--background-main);
     padding: 0;
     font-family: inherit;
     text-align: center;
-    color: #d41443;
+    color: var(--title-main);
     border: none;
     cursor: pointer;
     width: 159px;
     height: 44px;
     border-radius: 22px;
-    stroke: #d41443;
+    stroke: var(--title-main);
     font-weight: 700;
     line-height: 1.31;
 
@@ -60,20 +57,14 @@ header {
     }
 
     @include mq(tab-only) {
-        // display: block;
         background-color: transparent;
         width: auto;
     }
 }
 
-// .header__buttons:hover {
-//     @include mq(mob-only) {
-//         stroke: #ffffff
-//     }
-
 .mobile-nav__btn:focus,
 .mobile-nav__btn:hover {
-    stroke: #fff;
+    stroke: var(--background-secondary);
 }
 
 .logo {
@@ -83,17 +74,9 @@ header {
     }
 
     display: flex;
-
-    // align-items: center;
-    // font-family: var(--title-ff);
-    // font-size: 30px;
-    // color: var(--title-main);
-
-    // text-transform: uppercase;
 }
 
 .logo__img {
-    // margin-right: 24px;
     max-height: 50px;
 }
 
@@ -102,7 +85,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // max-height: 50px;
 
     @include mq(tab) {
         max-height: 50px;
@@ -135,10 +117,8 @@ header {
     height: 100vh;
     padding: 60px 20px;
     z-index: 3;
-
     opacity: 0;
-    background-color: #e17992;
-
+    background-color: var(--background-mobile);
     visibility: hidden;
     pointer-events: none;
     filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
@@ -160,10 +140,11 @@ header {
     z-index: 4;
 
     cursor: pointer;
-    stroke: #d41443;
-    transition-property: stroke;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    stroke: var(--title-main);
+    transition: stroke var(--transition);
+    // transition-property: stroke;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
     @include mq(tab) {
@@ -186,7 +167,7 @@ header {
 
 .mobile-nav__btn.is-open:hover,
 .icon-close:focus {
-    stroke: #d41443;
+    stroke: var(--title-main);
 }
 
 .mobile-nav__btn .icon-close {
@@ -199,7 +180,7 @@ header {
 
 .mobile-nav__btn:hover,
 .mobile-nav__btn:focus {
-    stroke: #fff;
+    stroke: var(--background-secondary);
 }
 
 .mobile-nav__btn.is-open .icon-menu {
@@ -210,13 +191,13 @@ header {
 .header__btn {
     display: none;
 
-    background-color: #ffffff;
+    background-color: var(--background-secondary);
     padding: 0;
 
     font-family: inherit;
     text-align: center;
 
-    color: #d41443;
+    color: var(--title-main);
     border: none;
     cursor: pointer;
 
@@ -228,17 +209,10 @@ header {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
-
-    transition-property: color background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    transition: color var(--transition), background-color var(--transition);
 
     @include mq(tab-only) {
         display: block;
-        // width: 100%;
-
-
     }
 
     @include mq(desc) {
@@ -249,18 +223,18 @@ header {
 
 .btn-icon {
     margin-left: 12px;
-    color: #d41443;
-    stroke: #d41443;
+    color: var(--title-main);
+    stroke: var(--title-main);
 }
 
 .header__btn--mobile {
-    background-color: #ffffff;
+    background-color: var(--background-secondary);
     padding: 0;
 
     font-family: inherit;
     text-align: center;
-    stroke: #d41443;
-    color: #d41443;
+    stroke: var(--title-main);
+    color: var(--title-main);
     border: none;
     cursor: pointer;
 
@@ -273,10 +247,7 @@ header {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
-
-    transition-property: color background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition), background-color var(--transition);
 
     @include mq(tab) {
         width: 186px;
@@ -288,17 +259,17 @@ header {
 .header__btn--mobile:hover,
 .header__btn:focus,
 .header__btn--mobile:focus {
-    background-color: #d41443;
-    color: #ffffff;
-    fill: #ffffff;
-    stroke: #ffffff;
+    background-color: var(--title-main);
+    color: var(--background-secondary);
+    fill: var(--background-secondary);
+    stroke: var(--background-secondary);
 }
 
 .header__btn:hover .btn-icon,
 .header__btn--mobile:hover .btn-icon,
 .header__btn:focus .btn-icon,
 .header__btn--mobile:focus .btn-icon {
-    stroke: #ffffff;
+    stroke: var(--background-secondary);
 }
 
 
@@ -317,24 +288,22 @@ header {
 }
 
 .site-nav__link {
-    color: #fff;
+    color: var(--background-secondary);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     text-decoration: none;
+    transition: color var(--transition);
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav__link:hover,
 .site-nav__link:focus {
-    color: #d41443;
+    color: var(--title-main);
 }
 
 .site-nav__link--current {
-    color: #d41443;
+    color: var(--title-main);
 }
 
 .site-nav__item--mobile:not(:last-child) {
