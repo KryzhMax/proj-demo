@@ -16,8 +16,12 @@
   margin-bottom: 20px;
   color: var(--background-secondary);
   padding: 0 30px;
-  background-color: var(--green-color);
+  background-color: var(--coffee-color);
   border-radius: 4px;
+}
+
+.card__item:nth-child(even) .category__name {
+  background-color: var(--green-color);
 }
 
 .card__content,
