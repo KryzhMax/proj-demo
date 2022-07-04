@@ -1,4 +1,3 @@
-
   (() => {
     const refs = {
       openFranchiseBtn: document.querySelector('[data-franchise-open]'),
