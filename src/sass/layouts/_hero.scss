@@ -1,7 +1,7 @@
 .hero {
     display: block;
     position: relative;
-    background: #ffb8ca;
+    background: var(--background-accent);
     height: 502px;
     overflow: hidden;
 
@@ -80,19 +80,11 @@
         position: absolute;
         right: 15px;
         bottom: -60px;
-
-        // top: 433px;
     }
 }
 
 .hero__item_button:first-child {
     margin-right: 8px;
-}
-
-.hero__item_button {
-    @include mq(tab-only) {
-        // margin-bottom: 19px;
-    }
 }
 
 .hero__title {
@@ -102,7 +94,7 @@
     font-size: 26px;
     line-height: 1;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: var(--background-secondary);
     width: 218px;
     max-width: 100%;
     height: 106px;
@@ -130,7 +122,7 @@
 }
 
 .hero__title_red {
-    color: #d41443;
+    color: var(--title-main);
     text-transform: uppercase;
     font-size: 48px;
 
@@ -158,41 +150,10 @@
     display: flex;
     margin-left: 0;
     margin-right: auto;
-    // min-width: 280px;
-    // max-width: 440px;
-    // padding-left: 10px;
-    // padding-right: 10px;
-
-    @include mq(tab-only) {
-
-        // width: 700px;
-        // padding-left: 10px;
-        // padding-right: 10px;
-        // margin-left: 0;
-        // margin-right: 0;
-    }
 
     @include mq(desc) {
         max-height: 216px;
-        // width: 1050px;
-        // padding-left: 15px;
-        // padding-right: 15px;
     }
-
-    // @media screen and (min-width: $tablet) {
-    //     width: 700px;
-    //     padding-left: 10px;
-    //     padding-right: 10px;
-    // }
-
-    // @media screen and (min-width: $desktop) {
-    //     width: 1050px;
-    //     padding-left: 15px;
-    //     padding-right: 15px;
-    // }
-
-    // height: 126px;
-    // width: 700px;
 }
 
 .hero__img_milk {
@@ -200,24 +161,10 @@
 
     @include mq(tab-only) {
         display: block;
-        // position: absolute;
-
-        // left: 0;
-        // left: 34px;
-
-        // top: 245px;
     }
 
     @include mq(desc) {
         display: block;
-
-        // position: absolute;
-        // left: 15px;
-
-        // left: 77px;
-
-        // top: 429px;
-        // bottom: 60px;
     }
 }
 
@@ -225,9 +172,6 @@
     margin-left: 0;
     display: block;
     margin-top: 68px;
-    // margin-bottom: auto;
-    // align-items: left;
-    // flex-direction: column;
 
     @include mq(tab-only) {
         margin-top: 41px;
@@ -238,7 +182,7 @@
     display: flex;
     width: 346px;
     height: 344px;
-    background-color: #ffa5ba;
+    background-color: var(--title-secondary);
     border-radius: 50%;
     position: absolute;
     left: 36px;
@@ -270,25 +214,18 @@
         font-weight: 400;
         font-size: 8px;
         line-height: 1.5;
-        color: #ffffff;
-        // margin-top: 30px;
-        // margin-left: 120px;
+        color: var(--background-secondary);
     }
 
     @include mq(desc) {
         display: block;
-        // margin: 0;
-        // vertical-align: middle;
+
         margin-top: auto;
         margin-bottom: auto;
         margin-left: 0;
         position: absolute;
         line-height: 1.42;
-        color: #ffffff;
-
-        // margin-top: 140px;
-        // margin-left: 160px;
-        // margin-left: 148px;
+        color: var(--background-secondary);
         font-size: 14px;
     }
 }
@@ -325,7 +262,7 @@
         height: 16px;
         border-radius: 50%;
         left: 50%;
-        background-color: #ffffff;
+        background-color: var(--background-secondary);
         z-index: -1;
     }
 
@@ -345,7 +282,7 @@
         line-height: 1.14;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: #d41443;
+        color: var(--title-main);
     }
 
     @include mq(desc) {
@@ -360,7 +297,7 @@
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
-    color: #ffffff;
+    color: var(--background-secondary);
 
     @include mq(desc) {
         font-size: 14px;
@@ -368,11 +305,11 @@
 }
 
 .hero__button_products {
-    background-color: #d41443;
+    background-color: var(--title-main);
     padding: 0;
     font-family: inherit;
     text-align: center;
-    color: #ffffff;
+    color: var(--background-secondary);
     border: none;
     cursor: pointer;
     width: 62px;
@@ -390,25 +327,23 @@
         line-height: 1.29;
     }
 
-
-    transition-property: color background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition),
+    background-color var(--transition);
 
 }
 
 .hero__button_products:hover,
 .hero__button_products:focus {
-    background-color: #ffffff;
-    color: #d41443;
+    background-color: var(--background-secondary);
+    color: var(--title-main);
 }
 
 .hero__button_made {
-    background-color: #ffffff;
+    background-color: var(--background-secondary);
     padding: 0;
     font-family: inherit;
     text-align: center;
-    color: #d41443;
+    color: var(--title-main);
     border: none;
     cursor: pointer;
     width: 83px;
@@ -426,11 +361,8 @@
         line-height: 1.29;
     }
 
-
-
-    transition-property: color background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition),
+    background-color var(--transition);
 }
 
 .hero__button_arrow {
@@ -441,15 +373,14 @@
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: var(--background-secondary);
     border: none;
-    color: #d41443;
-    fill: #d41443;
+    color: var(--title-main);
+    fill: var(--title-main);
     cursor: pointer;
 
-    transition-property: color background-color fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition),
+        background-color var(--transition), fill var(--transition);
 }
 
 
@@ -471,25 +402,18 @@
         display: block;
         margin-top: 98px;
         margin-left: 0;
-        // position: absolute;
-        // margin-left: 0;
-        // width: 26px;
-        // height: 26px;
-        // left: 295px;
-        // top: 583px;
     }
 }
 
 
 .hero__button_made:hover,
 .hero__button_made:focus {
-    background-color: #d41443;
-    color: #ffffff;
-    fill: #ffffff;
+    background-color: var(--title-main);
+    color: var(--background-secondary);
+    fill: var(--background-secondary);
 }
 
 .hero__button_arrow:hover,
 .hero__button_arrow:focus {
     transform: rotateZ(90deg);
-
 }
