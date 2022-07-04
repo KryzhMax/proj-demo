@@ -4,8 +4,6 @@
 
 
 .advantages__list {
-    // justify-content: space-between;
-
     @include mq(tab) {
     gap: 120px;
     flex-wrap: nowrap;
@@ -21,11 +19,7 @@
 
 
 .advantages__item {
-    @include mq(tab) {  
-        // width: 150px;
-    //   flex-basis: calc((100% - 159px) / 3);
-            
-    }
+
 
     &:not(:last-child) {
             margin-bottom: 32px;
@@ -71,38 +65,36 @@
     display: flex;
     min-width: 98px;
     min-height: 56px;
-    @include fonts($fs: 34px, $fw: 400, $lh: 1.14, $ls: 0.04em);
+    @include fonts(34px, 400, 1.14, 0.04em);
         color: var(--title-main);
         text-transform: uppercase;
             font-family: var(--title-ff);
 
     @include mq(tab) {
-            @include fonts($fs: 48px, $fw: 400, $lh: 1.15, $ls: 0.04em);
+            @include fonts(48px, 400, 1.15, 0.04em);
     margin-bottom: 13px;
         }
 
      @include mq(desc) {
-     @include fonts($fs: 58px, $fw: 400, $lh: 1.13, $ls: 0.04em);
+     @include fonts(58px, 400, 1.13, 0.04em);
      margin-bottom: 16px;
      min-height: 65px;
     }
-                                  
-
 }
 
 
 .advantages__text {
-    @include fonts($fs: 12px, $fw: 700, $lh: 1.7);
+    @include fonts(12px, 700, 1.7, null);
     color: #000;
     width: 230px;
 
     @include mq(tab) {
-    @include fonts($fs: 14px, $fw: 700, $lh: 1.7);
+    @include fonts(14px, 700, 1.7, null);
     width: auto;
     }
 
      @include mq(desc) {
-     @include fonts($fs: 16px,$fw: 700, $lh: 1.7);
+     @include fonts(16px, 700, 1.7, null);
      }
 
 }
