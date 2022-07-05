@@ -147,6 +147,14 @@
   @include fonts($fs: 16px, $fw: 700, $lh: 1.31, $ls: 0.02em);
   cursor: pointer;
   color: var(--background-secondary);
+  transition: color var(--transition), background-color var(--transition),
+    box-shadow var(--transition);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    background-color: #ecebeb;
+    color: var(--title-main);
+  }
   @include mq(mob-only) {
     width: 162px;
     height: 44px;
@@ -162,6 +170,11 @@
 .connect__button.franchise {
   color: var(--title-main);
   background-color: var(--background-secondary);
+  transition: color var(--transition), background-color var(--transition);
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
 
 //  modal
@@ -243,11 +256,9 @@
 
 .icon-more {
   fill: currentColor;
+  stroke: currentColor;
   margin-left: 8px;
   @include mq(tab) {
     margin-left: 14px;
   }
-}
-.icon-more1 {
-  fill: red;
 }
