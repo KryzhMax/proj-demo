@@ -275,6 +275,9 @@
   height: 200px;
   transition: opacity 300ms linear, visibility 3000ms linear,
     height 300ms linear;
+  @include mq(tab) {
+    height: 232px;
+  }
 }
 
 .products__text--pop-up::before {
