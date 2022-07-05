@@ -312,7 +312,7 @@
     color: var(--background-secondary);
     border: none;
     cursor: pointer;
-    width: 62px;
+    min-width: 62px;
     height: 24px;
     border-radius: 20px;
     font-weight: 400;
@@ -334,7 +334,9 @@
 
 .hero__button_products:hover,
 .hero__button_products:focus {
-    background-color: var(--background-secondary);
+    background-color: #ECEBEB;
+
+    // background-color: var(--background-secondary);
     color: var(--title-main);
 }
 
@@ -346,7 +348,7 @@
     color: var(--title-main);
     border: none;
     cursor: pointer;
-    width: 83px;
+    min-width: 83px;
     height: 24px;
     border-radius: 20px;
     font-weight: 400;
@@ -408,9 +410,12 @@
 
 .hero__button_made:hover,
 .hero__button_made:focus {
-    background-color: var(--title-main);
-    color: var(--background-secondary);
-    fill: var(--background-secondary);
+    background-color: #ECEBEB;
+    // color: var(--title-main);
+    // fill: var(--title-main);
+    // background-color: var(--title-main);
+    // color: var(--background-secondary);
+    // fill: var(--background-secondary);
 }
 
 .hero__button_arrow:hover,
