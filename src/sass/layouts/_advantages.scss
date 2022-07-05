@@ -1,0 +1,90 @@
+.advantages-section {
+  background-color: #fff5f6;
+}
+
+.advantages__list {
+  @include mq(tab) {
+    gap: 120px;
+    flex-wrap: nowrap;
+  }
+
+  @include mq(desc) {
+    gap: 190px;
+  }
+}
+
+.advantages__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+    @include mq(tab) {
+      margin-bottom: 0;
+    }
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    margin-bottom: 16px;
+    @include mq(tab) {
+      margin-bottom: 36px;
+    }
+    @include mq(desc) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &-first::before {
+    width: 33px;
+    height: 50px;
+    background-image: url(../images/advantages/ad-1.png);
+  }
+
+  &-second::before {
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/advantages/ad-2.png);
+  }
+
+  &-third::before {
+    width: 46px;
+    height: 50px;
+    background-image: url(../images/advantages/ad-3.png);
+  }
+}
+
+.advantages__number {
+  margin-bottom: 4px;
+  display: flex;
+  min-width: 98px;
+  min-height: 56px;
+  @include fonts(34px, 400, 1.14, 0.04em);
+  color: var(--title-main);
+  text-transform: uppercase;
+  font-family: var(--title-ff);
+
+  @include mq(tab) {
+    @include fonts(48px, 400, 1.15, 0.04em);
+    margin-bottom: 13px;
+  }
+
+  @include mq(desc) {
+    @include fonts(58px, 400, 1.13, 0.04em);
+    margin-bottom: 16px;
+    min-height: 65px;
+  }
+}
+
+.advantages__text {
+  @include fonts(12px, 700, 1.7, null);
+  color: #000;
+  width: 230px;
+
+  @include mq(tab) {
+    @include fonts(14px, 700, 1.7, null);
+    width: auto;
+  }
+
+  @include mq(desc) {
+    @include fonts(16px, 700, 1.7, null);
+  }
+}
