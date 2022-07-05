@@ -291,8 +291,9 @@
   margin-top: 32px;
 
   background-color: #ffffff;
-  transition: transform 300ms linear;
+  transition: background-color, transform 300ms linear;
   &:hover {
     transform: rotate(-90deg);
+    background-color: #ecebeb;
   }
 }
