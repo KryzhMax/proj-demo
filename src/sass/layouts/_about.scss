@@ -1,4 +1,4 @@
-.about.section {
+.about {
   background-color: var(--background-main);
   @include mq(desc) {
     background-image: url(../images/about/milkdesctop.png);
@@ -9,6 +9,16 @@
       background-image: url(../images/about/milkdesctop2x.png);
       background-repeat: no-repeat;
       background-position: 0 236px;
+      background-size: 100%;
+    }
+  }
+  @include mq(mob-only) {
+    bottom: 175px;
+    background-image: url(../images/about/milk.png);
+    background-repeat: no-repeat;
+    background-position: 0 73px;
+    @include mq(retina) {
+      background-image: url(../images/about/milk2x.png);
       background-size: 100%;
     }
   }
@@ -73,15 +83,7 @@
 .content {
   font-weight: 500;
   @include fonts(12px, null, 1.62, null);
-  @include mq(mob-only) {
-    background-image: url(../images/about/milk.png);
-    background-repeat: no-repeat;
-    background-position: 0 73px;
-    @include mq(retina) {
-      background-image: url(../images/about/milk2x.png);
-      background-size: 100%;
-    }
-  }
+
   @include mq(tab) {
     @include fonts(14px, null, 1.76, 0.04em);
   }
@@ -93,6 +95,9 @@
 .aboutdivs {
   @include mq(tab) {
     display: flex;
+  }
+  @include mq(desc) {
+    align-items: center;
   }
 }
 
@@ -172,7 +177,6 @@
   }
   @include mq(desc) {
     max-width: 463px;
-    padding-top: 90px;
   }
 }
 

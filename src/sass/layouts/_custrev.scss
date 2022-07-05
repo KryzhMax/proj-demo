@@ -87,13 +87,14 @@
 
 .swiper-wrapper {
   height: auto;
+  margin-bottom: 32px;
   @include mq(tab) {
     width: 620px;
-    height: 500px;
+    margin-bottom: 60px;
   }
   @include mq(desc) {
     width: 968px;
-    height: 600px;
+    margin-bottom: 50px;
   }
 }
 .swiper-pagination {

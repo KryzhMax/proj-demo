@@ -4,9 +4,10 @@
 }
 
 .advantages__list {
+  display: flex;
+  --card-item: 1;
   @include mq(tab) {
-    gap: 120px;
-    flex-wrap: nowrap;
+    --card-item: 3;
   }
 
   @include mq(desc) {
@@ -15,42 +16,39 @@
 }
 
 .advantages__item {
-  &:not(:last-child) {
-    margin-bottom: 32px;
-    @include mq(tab) {
-      margin-bottom: 0;
-    }
+  @include mq(tab) {
+    margin-bottom: 0;
   }
+}
 
-  &::before {
-    content: '';
-    display: inline-block;
-    margin-bottom: 16px;
-    @include mq(tab) {
-      margin-bottom: 36px;
-    }
-    @include mq(desc) {
-      margin-bottom: 40px;
-    }
+.advantages__item::before {
+  content: '';
+  display: inline-block;
+  margin-bottom: 16px;
+  @include mq(tab) {
+    margin-bottom: 36px;
   }
+  @include mq(desc) {
+    margin-bottom: 40px;
+  }
+}
 
-  &-first::before {
-    width: 33px;
-    height: 50px;
-    background-image: url(../images/advantages/ad-1.png);
-  }
+.advantages__item-first::before {
+  width: 33px;
+  height: 50px;
+  background-image: url(../images/advantages/ad-1.png);
+}
 
-  &-second::before {
-    width: 50px;
-    height: 50px;
-    background-image: url(../images/advantages/ad-2.png);
-  }
+.advantages__item-second::before {
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/advantages/ad-2.png);
+}
 
-  &-third::before {
-    width: 46px;
-    height: 50px;
-    background-image: url(../images/advantages/ad-3.png);
-  }
+.advantages__item-third::before {
+  width: 46px;
+  height: 50px;
+  background-image: url(../images/advantages/ad-3.png);
 }
 
 .advantages__number {
