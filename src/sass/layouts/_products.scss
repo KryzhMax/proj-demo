@@ -293,6 +293,6 @@
   background-color: #ffffff;
   transition: transform 300ms linear;
   &:hover {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
   }
 }
