@@ -1,0 +1,188 @@
+.about.section {
+  background-color: var(--background-main);
+  @include mq(desc) {
+    background-image: url(../images/about/milkdesctop.png);
+    background-repeat: no-repeat;
+    background-position: 0 236px;
+    background-size: 100%;
+  }
+}
+
+.about.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  @include mq(tab) {
+    padding: 0 33px;
+  }
+  @include mq(desc) {
+    padding: 0 16px;
+  }
+}
+.about__label {
+  display: block;
+  font-family: var(--title-ff);
+  @include fonts(18px, 400, 1.17, null);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--title-secondary);
+  margin-bottom: 16px;
+  @include mq(tab) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @include mq(desc) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+}
+
+.about__title {
+  font-family: var(--title-ff);
+  @include fonts(34px, 400, 1.15, null);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--title-main);
+
+  @include mq(tab) {
+    @include fonts(48px, 400, 1.15, 0.04em);
+  }
+
+  @include mq(desc) {
+    @include fonts(58px, 400, 1.14, 0.06em);
+  }
+}
+
+.aboutdivs picture {
+  @include mq(tab) {
+    margin-right: 32px;
+  }
+  @include mq(desc) {
+    margin-right: 99px;
+  }
+}
+
+.content {
+  font-weight: 500;
+  @include fonts(12px, null, 1.62, null);
+  @include mq(mob-only) {
+    background-image: url(../images/about/milk.png);
+    background-repeat: no-repeat;
+    background-position: 0 73px;
+    @include mq(retina) {
+      background-image: url(../images/about/milk2x.png);
+      background-size: 100%;
+    }
+  }
+  @include mq(tab) {
+    @include fonts(14px, null, 1.76, 0.04em);
+  }
+  @include mq(desc) {
+    @include fonts(14px, null, 1.94, 0.04em);
+  }
+}
+
+.aboutdivs {
+  @include mq(tab) {
+    display: flex;
+  }
+}
+
+.content__button {
+  background-color: var(--background-secondary);
+  padding: 0;
+
+  font-family: inherit;
+  text-align: center;
+
+  color: var(--title-main);
+  border: none;
+  cursor: pointer;
+
+  min-width: 176px;
+  height: 44px;
+
+  border-radius: 22px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  transition: color var(--transition), background-color var(--transition);
+
+  @include mq(tab-only) {
+    display: block;
+  }
+
+  @include mq(desc) {
+    display: block;
+    min-width: 176px;
+  }
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.svgbutton {
+  margin-left: 13px;
+  align-items: center;
+}
+
+.about_imagecowmilk {
+  max-width: 280px;
+  @include mq(tab) {
+    max-width: 336px;
+  }
+  @include mq(desc) {
+    max-width: 501px;
+  }
+}
+
+.about__titles {
+  margin-bottom: 32px;
+
+  @include mq(tab) {
+    margin-bottom: 40px;
+  }
+
+  @include mq(desc) {
+    margin-bottom: 60px;
+  }
+}
+
+.content__text {
+  &.text-black {
+    margin-bottom: 30px;
+  }
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.content__wrap {
+  max-width: 220px;
+  margin-bottom: 15px;
+  @include mq(tab) {
+    max-width: 335px;
+    margin-bottom: 40px;
+  }
+  @include mq(desc) {
+    max-width: 463px;
+    padding-top: 90px;
+  }
+}
+
+.cowmilk {
+  display: block;
+  @include mq(mob-only) {
+    margin-bottom: 40px;
+  }
+  @include mq(tab) {
+    margin-right: 32px;
+  }
+  @include mq(desc) {
+    margin-right: 99px;
+  }
+}
