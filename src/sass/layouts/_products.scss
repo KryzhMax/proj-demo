@@ -31,6 +31,7 @@
 
 .products__list {
   display: flex;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
   @include mq(mob-only) {
@@ -265,7 +266,17 @@
   }
 
   &.is-hidden {
-    display: none;
+    height: 1px;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.products__text--pop-up {
+  height: 200px;
+  transition: opacity 300ms linear, visibility 3000ms linear,
+    height 300ms linear;
+  @include mq(tab) {
+    height: 232px;
   }
 }
 
