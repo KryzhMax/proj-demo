@@ -269,6 +269,17 @@
   }
 }
 
+.products__text--pop-up::before {
+  content: '';
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/white-dots.png);
+  justify-content: center;
+  width: 26px;
+  height: 6px;
+  margin: 32px auto;
+}
+
 .products__btn {
   display: flex;
   align-content: center;
