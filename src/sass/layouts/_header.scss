@@ -98,6 +98,10 @@ header {
     }
 }
 
+.site-nav__list--mobile {
+    position: relative;
+}
+
 .site-nav--mobile {
 
     @include mq(desc) {
