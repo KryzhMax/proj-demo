@@ -119,15 +119,27 @@ body {
 }
 
 .custrev__client {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 28px;
 }
 
 .custrev__box {
-  height: 308px;
+  padding: 30px 50px 17px;
+}
+
+.swiper-slide {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.custrev__wrapper {
+  position: relative;
+  margin-bottom: 33px;
   background-color: #fafafa;
+  height: 308px;
+  width: 280px;
 }
 
 .custrev__text {
@@ -135,20 +147,24 @@ body {
   font-weight: 500;
   line-height: 2.6;
   margin: auto;
+  margin-top: 43px;
   width: 157px;
-  height: 239px;
+  height: 248px;
   text-align: center;
   color: #000000;
-  background-image: -webkit-repeating-linear-gradient(top, transparent 0px, transparent 19px, #e1e1e1 1px, transparent 20px);
+  background-position: 0 100%;
+  display: inline-block;
+  background-image: repeating-linear-gradient(0deg, #e1e1e1 0 1px, transparent 1px 31px);
 }
 .custrev__text::before {
-  content: url(../images/cust-revi/quotes.png);
-}
-
-.custrev__slider {
-  margin-top: 16px;
-  left: 74px;
-  right: 74px;
+  position: absolute;
+  top: 25px;
+  left: 53px;
+  content: "";
+  display: inline-block;
+  width: 54px;
+  height: 40px;
+  background-image: url(../images/cust-revi/quotes.png);
 }
 
 .custrev__slider-text {
@@ -159,5 +175,31 @@ body {
   color: #000000;
 }
 .custrev__slider-text::before {
-  content: url(../images/cust-revi/points.png);
+  content: "";
+  width: 32px;
+  height: 4px;
+  background-image: url(../images/cust-revi/points.png);
+  flex-direction: column;
+  justify-content: center;
+  margin: 16px auto;
+  display: flex;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  -o-object-fit: auto;
+     object-fit: auto;
 }/*# sourceMappingURL=index.css.map */

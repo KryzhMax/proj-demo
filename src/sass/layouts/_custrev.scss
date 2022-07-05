@@ -2,43 +2,43 @@
   color: red;
 }
 .custrev__client {
-  display: block;
+  // display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 28px;
 }
-.custrev__box {
-  height: 308px;
-  // left: 20px;
-  // right: 20px;
-  // padding: 30px 50px 17px;
 
-  background-color: #fafafa;
+.custrev__box {
+  padding: 30px 50px 17px;
 }
+
 .custrev__wrapper {
   position: relative;
   margin-bottom: 33px;
+  background-color: #fafafa;
+  height: 308px;
+  width: 280px;
 }
 .custrev__text {
   @include fonts(12px, 500, 2.6, null);
   margin: auto;
+  margin-top: 43px;
   width: 157px;
-  height: 239px;
+  height: 248px;
   text-align: center;
   color: #000000;
-
   background-position: 0 100%;
-
+  display: inline-block;
   background-image: repeating-linear-gradient(
     0deg,
     #e1e1e1 0 1px,
-    transparent 1px 30px
+    transparent 1px 31px
   );
 
   &::before {
     position: absolute;
-    top: -10px;
-    left: 30px;
+    top: 25px;
+    left: 53px;
     content: '';
     display: inline-block;
     width: 54px;
@@ -47,11 +47,6 @@
   }
 }
 
-// .custrev__slider {
-//   margin-top: 16px;
-//   left: 74px;
-//   right: 74px;
-// }
 .custrev__slider-text {
   @include fonts(14px, 500, 1.8, null);
   text-align: center;
@@ -61,8 +56,8 @@
     width: 32px;
     height: 4px;
     background-image: url(../images/cust-revi/points.png);
-    flex-direction: column;
-    justify-content: center;
+    // flex-direction: column;
+    // justify-content: center;
     margin: 16px auto;
     display: flex;
   }
@@ -74,30 +69,27 @@
 
 .swiper-slide {
   text-align: center;
-  // font-size: 18px;
-  // background: #fff;
+  flex-direction: column;
 
   /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  // display: -webkit-box;
+  // display: -ms-flexbox;
+  // display: -webkit-flex;
+  // display: flex;
+  // -webkit-box-pack: center;
+  // -ms-flex-pack: center;
+  // -webkit-justify-content: center;
+  // justify-content: center;
+  // -webkit-box-align: center;
+  // -ms-flex-align: center;
+  // -webkit-align-items: center;
+  // align-items: center;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: auto;
-}
+// .swiper-slide img {
+//   display: block;
+//   object-fit: auto;
+// }
 
 // p {
 //   font: 12px/20px Arial;
