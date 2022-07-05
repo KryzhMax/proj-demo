@@ -1,4 +1,5 @@
 .custrev {
+  padding-top: 0;
   .custrev__client {
     // display: block;
     margin-left: auto;
@@ -85,7 +86,7 @@
 }
 
 .swiper-wrapper {
-  height: 450px;
+  height: auto;
   @include mq(tab) {
     width: 620px;
     height: 500px;
@@ -125,11 +126,23 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+
+  @include mq(mob) {
+    padding-top: 120px;
+  }
 }
 
 .customer__img {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @include mq(mob-only) {
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    transform: translate(-50%, -50%);
+  }
+  @include mq(desc) {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
