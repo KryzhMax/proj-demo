@@ -5,6 +5,12 @@
     background-repeat: no-repeat;
     background-position: 0 236px;
     background-size: 100%;
+    @include mq(retina) {
+      background-image: url(../images/about/milkdesctop2x.png);
+      background-repeat: no-repeat;
+      background-position: 0 236px;
+      background-size: 100%;
+    }
   }
 }
 
