@@ -205,7 +205,7 @@ header {
     border: none;
     cursor: pointer;
 
-    width: 159px;
+    min-width: 159px;
     height: 44px;
 
     border-radius: 22px;
@@ -221,7 +221,7 @@ header {
 
     @include mq(desc) {
         display: block;
-        width: 159px;
+        min-width: 159px;
     }
 }
 
@@ -242,7 +242,7 @@ header {
     border: none;
     cursor: pointer;
 
-    width: 209px;
+    min-width: 209px;
     height: 44px;
     margin-bottom: 32px;
 
@@ -263,17 +263,22 @@ header {
 .header__btn--mobile:hover,
 .header__btn:focus,
 .header__btn--mobile:focus {
-    background-color: var(--title-main);
-    color: var(--background-secondary);
-    fill: var(--background-secondary);
-    stroke: var(--background-secondary);
+    background-color: #ECEBEB;
+    color: var(--title-main);
+    fill: var(--title-main);
+    stroke: var(--title-main);
+    // background-color: var(--title-main);
+    // color: var(--background-secondary);
+    // fill: var(--background-secondary);
+    // stroke: var(--background-secondary);
 }
 
 .header__btn:hover .btn-icon,
 .header__btn--mobile:hover .btn-icon,
 .header__btn:focus .btn-icon,
 .header__btn--mobile:focus .btn-icon {
-    stroke: var(--background-secondary);
+    stroke: var(--title-main);
+    // stroke: var(--background-secondary);
 }
 
 
