@@ -15,6 +15,7 @@ p {
   padding: 0;
 }
 
+
 ul,
 a {
   list-style: none;
@@ -122,6 +123,95 @@ body {
   padding-bottom: 60px;
 }
 
+.custrev {
+  color: red;
+}
+
+.custrev__client {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+}
+
+.custrev__box {
+  padding: 30px 50px 17px;
+}
+
+.swiper-slide {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.custrev__wrapper {
+  position: relative;
+  margin-bottom: 33px;
+  background-color: #fafafa;
+  height: 308px;
+  width: 280px;
+}
+
+.custrev__text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2.6;
+  margin: auto;
+  margin-top: 43px;
+  width: 157px;
+  height: 248px;
+  text-align: center;
+  color: #000000;
+  background-position: 0 100%;
+  display: inline-block;
+  background-image: repeating-linear-gradient(0deg, #e1e1e1 0 1px, transparent 1px 31px);
+}
+.custrev__text::before {
+  position: absolute;
+  top: 25px;
+  left: 53px;
+  content: "";
+  display: inline-block;
+  width: 54px;
+  height: 40px;
+  background-image: url(../images/cust-revi/quotes.png);
+}
+
+.custrev__slider-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.8;
+  text-align: center;
+  color: #000000;
+}
+.custrev__slider-text::before {
+  content: "";
+  width: 32px;
+  height: 4px;
+  background-image: url(../images/cust-revi/points.png);
+  flex-direction: column;
+  justify-content: center;
+  margin: 16px auto;
+  display: flex;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  -o-object-fit: auto;
+     object-fit: auto;
+  
 header {
   position: absolute;
   width: 100%;

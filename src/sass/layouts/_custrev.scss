@@ -1,0 +1,123 @@
+.custrev {
+  .custrev__client {
+    // display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .custrev__box {
+    padding: 30px 50px 17px;
+  }
+
+  .custrev__wrapper {
+    position: relative;
+    margin-top: 32px;
+    padding: 43px 58px 26px 65px;
+    background-color: #fafafa;
+
+    width: 280px;
+    @include mq(tab) {
+      width: 620px;
+      padding: 40px 52px;
+      margin-top: 40px;
+    }
+    @include mq(desc) {
+      width: 968px;
+      padding: 43px 109px;
+      margin-top: 63px;
+    }
+  }
+
+  .custrev__text {
+    @include fonts(12px, 500, 2.6, null);
+    margin: auto;
+    // margin-top: 43px;
+    width: 157px;
+    height: 248px;
+    text-align: center;
+    color: #000000;
+    background-position: 0 100%;
+    display: inline-block;
+    z-index: 1;
+    background-image: repeating-linear-gradient(
+      0deg,
+      #e1e1e1 0 1px,
+      transparent 1px 31px
+    );
+
+    &::before {
+      position: absolute;
+      top: 30px;
+      left: 53px;
+      content: '';
+      display: inline-block;
+      width: 54px;
+      height: 40px;
+      background-image: url(../images/cust-revi/quotes.png);
+      @include mq(tab) {
+        left: 16px;
+        top: 20px;
+      }
+      @include mq(desc) {
+        top: 32px;
+        left: 72px;
+      }
+    }
+    @include mq(tab) {
+      width: 514px;
+    }
+    @include mq(desc) {
+      width: 750px;
+    }
+  }
+
+  .custrev__slider-text {
+    @include fonts(14px, 500, 1.8, null);
+    text-align: center;
+    color: #000000;
+    &::before {
+      content: '';
+      width: 32px;
+      height: 4px;
+      background-image: url(../images/cust-revi/points.png);
+      margin: 16px auto;
+      display: flex;
+    }
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-wrapper {
+    margin-bottom: 50px;
+  }
+  .swiper-pagination {
+    .swiper-pagination-bullet-active {
+      background-color: transparent;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/cust-revi/home.svg);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+
+  .swiper-slide {
+    text-align: center;
+    flex-direction: column;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}

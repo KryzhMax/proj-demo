@@ -1,0 +1,108 @@
+<section class="custrev section">
+  <div class="custrev__box container">
+    <h2 class="visually-hidden">Customers review</h2>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+      <source
+        srcset="
+          ./images/cust-revi/mob/photo1.png 1x,
+          ./images/cust-revi/mob/photo1@2x.png 2x,
+          ./images/cust-revi/mob/photo1@3x.png 3x
+        "
+        media="(max-width: 767px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/cust-revi/tablet/photo1.png 1x,
+          ./images/cust-revi/tablet/photo1@2x.png 2x,
+          ./images/cust-revi/tablet/photo1@3x.png 3x
+        "
+        media="(min-width: 768px) and (max-width: 1200px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/cust-revi/desctop/photo1.png 1x,
+          ./images/cust-revi/desctop/photo1@2x.png 2x,
+          ./images/cust-revi/desctop/photo1@3x.png 3x
+        "
+        media="(min-width: 1200px)"
+        type="image/webp"
+      />
+      <img
+        class="hero__img"
+        src="./images/cust-revi/mob/photo1.png"
+        alt="foto"
+      />
+    </picture>
+          <div class="custrev__wrapper">
+            <p class="custrev__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+              ipsum primis in nibh vel risus.
+            </p>
+          </div>
+            <div class="custrev__slider">
+      <p class="custrev__slider-text">Emily, Los Angeles</p>
+    </div>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./images/cust-revi/client-two.jpg"
+            alt="girl"
+            class="custrev__client"
+            width="85"
+          />
+          <div class="custrev__wrapper">
+            <p class="custrev__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+              ipsum primis in nibh vel risus.
+            </p>
+          </div>
+            <div class="custrev__slider">
+      <p class="custrev__slider-text">Emily, Los Angeles</p>
+    </div>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./images/cust-revi/client-three.jpg"
+            alt="girl"
+            class="custrev__client"
+            width="85"
+          />
+          <div class="custrev__wrapper">
+            <p class="custrev__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+              ipsum primis in nibh vel risus.
+            </p>
+          </div>
+            <div class="custrev__slider">
+      <p class="custrev__slider-text">Emily, Los Angeles</p>
+    </div>
+        </div>
+    </div>
+
+  
+    <div class="swiper-pagination">
+      <!-- <svg class="swiper-icon" width="12" height="12">
+        <use href="./images/sprite.svg#icon-home"></use>
+      </svg> -->
+    </div>
+  </div>
+</div>
+</section>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.mySwiper', {
+    pagination: {
+      el: '.swiper-pagination',
+      dynamicBullets: true,
+    },
+  });
+</script>
