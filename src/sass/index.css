@@ -44,6 +44,7 @@ img {
   --card-gap: 32px;
   --title-ff: "Titan One";
   --text-ff: "DM Sans", sans-serif;
+  --text-black: #000000;
 }
 
 .card-set {
@@ -88,6 +89,10 @@ body {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.text-black {
+  color: var(--text-black);
 }
 
 .container {
@@ -427,13 +432,13 @@ body {
 }
 
 .about.section {
-  background-color: var(--backgroung-main);
+  background-color: var(--background-main);
 }
 @media (min-width: 1200px) {
   .about.section {
     background-image: url(../images/about/milkdesctop.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 0 236px;
     background-size: 100%;
   }
 }
@@ -441,38 +446,29 @@ body {
 .about.container {
   padding-left: 20px;
   padding-right: 20px;
-  margin-right: 0 auto;
-  margin-left: 0 auto;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .about.container {
-    padding-left: 32px;
-    padding-right: 34px;
+    padding: 0 33px;
   }
 }
 @media (min-width: 1200px) {
   .about.container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0 16px;
   }
 }
 
 .about__label {
   display: block;
-  font-family: "Titan One";
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--title-ff);
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.17;
   text-align: center;
   text-transform: uppercase;
   color: var(--title-secondary);
   margin-bottom: 16px;
-}
-@media (max-width: 767.98px) {
-  .about__label {
-    margin-bottom: 15px;
-  }
 }
 @media (min-width: 768px) {
   .about__label {
@@ -489,19 +485,19 @@ body {
 }
 
 .about__title {
-  font-family: "Titan One";
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--title-ff);
   font-size: 34px;
+  font-weight: 400;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: var(--title-main);
 }
 @media (min-width: 768px) {
   .about__title {
     font-size: 48px;
+    font-weight: 400;
     line-height: 1.15;
     letter-spacing: 0.04em;
   }
@@ -509,65 +505,53 @@ body {
 @media (min-width: 1200px) {
   .about__title {
     font-size: 58px;
+    font-weight: 400;
     line-height: 1.14;
     letter-spacing: 0.06em;
   }
 }
 
 @media (min-width: 768px) {
-  .about__image {
+  .aboutdivs picture {
     margin-right: 32px;
   }
 }
 @media (min-width: 1200px) {
-  .about__image {
+  .aboutdivs picture {
     margin-right: 99px;
   }
 }
 
-.content__firstinfo {
-  font-family: "DM Sans";
-  font-style: normal;
+.content {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
-  color: #000000;
-  margin-bottom: 40px;
 }
-@media (max-width: 767.98px) {
-  .content__firstinfo {
-    width: 220px;
-    height: 79px;
-  }
-}
-@media (min-width: 768px) {
-  .content__firstinfo {
-    width: 334px;
-    font-size: 14px;
-    line-height: 1.76;
-  }
-}
-@media (min-width: 1200px) {
-  .content__firstinfo {
-    width: 463px;
-    font-size: 16px;
-    line-height: 1.76;
-    letter-spacing: 0.04em;
-    margin-bottom: 32px;
-  }
-}
-
 @media (max-width: 767.98px) {
   .content {
     background-image: url(../images/about/milk.png);
     background-repeat: no-repeat;
-    background-position: 0px 73px;
+    background-position: 0 73px;
   }
 }
 @media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-moz-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
   .content {
     background-image: url(../images/about/milk2x.png);
     background-size: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .content {
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+}
+@media (min-width: 1200px) {
+  .content {
+    font-size: 14px;
+    line-height: 1.94;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -577,59 +561,39 @@ body {
   }
 }
 
-.content__secondinfo {
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.62;
-  color: #907e82;
+.content__button {
+  background-color: var(--background-secondary);
+  padding: 0;
+  font-family: inherit;
+  text-align: center;
+  color: var(--title-main);
+  border: none;
+  cursor: pointer;
+  min-width: 176px;
+  height: 44px;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  transition: color var(--transition), background-color var(--transition);
 }
-@media (max-width: 767.98px) {
-  .content__secondinfo {
-    width: 220px;
-    margin-bottom: 20px;
-  }
-}
-@media (min-width: 768px) {
-  .content__secondinfo {
-    width: 334px;
-    font-size: 14px;
-    line-height: 1.76;
-    letter-spacing: 0.04em;
-    margin-bottom: 40px;
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .content__button {
+    display: block;
   }
 }
 @media (min-width: 1200px) {
-  .content__secondinfo {
-    width: 463px;
-    font-size: 14px;
-    line-height: 1.94;
-    letter-spacing: 0.04em;
+  .content__button {
+    display: block;
+    min-width: 176px;
   }
 }
-
-.content__button {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding-left: 37px;
-  padding-right: 37.96px;
-  width: 176px;
-  height: 44px;
-  color: #d41443;
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-  background: #ffffff;
-  border-radius: 22px;
-  border: none;
+.content__button:hover, .content__button:focus {
+  background-color: #ecebeb;
 }
 
 .svgbutton {
-  margin-left: auto;
+  margin-left: 13px;
   align-items: center;
 }
 
@@ -658,6 +622,49 @@ body {
 @media (min-width: 1200px) {
   .about__titles {
     margin-bottom: 60px;
+  }
+}
+
+.content__text.text-black {
+  margin-bottom: 30px;
+}
+.content__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.content__wrap {
+  max-width: 220px;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .content__wrap {
+    max-width: 335px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .content__wrap {
+    max-width: 463px;
+    padding-top: 90px;
+  }
+}
+
+.cowmilk {
+  display: block;
+}
+@media (max-width: 767.98px) {
+  .cowmilk {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .cowmilk {
+    margin-right: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .cowmilk {
+    margin-right: 99px;
   }
 }
 
