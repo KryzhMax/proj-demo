@@ -37,7 +37,7 @@
   @include mq(mob-only) {
     flex-direction: column;
     padding-top: 148px;
-    gap: 0px;
+    gap: 148px;
   }
   @include mq(tab-only) {
     flex-wrap: nowrap;
@@ -122,9 +122,6 @@
 
   &:nth-child(2) {
     background-color: var(--coffee-color);
-    @include mq(mob-only) {
-      margin-top: 148px;
-    }
   }
 
   &:nth-child(2)::before {
@@ -172,9 +169,6 @@
 
   &:nth-child(3) {
     background-color: var(--green-color);
-    @include mq(mob-only) {
-      margin-top: 148px;
-    }
   }
 
   &:nth-child(3)::before {
