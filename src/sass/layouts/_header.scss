@@ -115,7 +115,7 @@ header {
   top: 0;
   right: 0;
   max-width: 250px;
-  height: 502px;
+  height: 100vh;
   padding: 60px 20px;
   z-index: 3;
   opacity: 0;
@@ -199,8 +199,8 @@ header {
   border: none;
   cursor: pointer;
 
-    min-width: 159px;
-    height: 44px;
+  min-width: 159px;
+  height: 44px;
 
   border-radius: 22px;
 
@@ -213,10 +213,10 @@ header {
     display: block;
   }
 
-    @include mq(desc) {
-        display: block;
-        min-width: 159px;
-    }
+  @include mq(desc) {
+    display: block;
+    min-width: 159px;
+  }
 }
 
 .btn-icon {
@@ -226,49 +226,48 @@ header {
 }
 
 .header__btn--mobile {
-    background-color: var(--background-secondary);
-    padding: 0;
+  background-color: var(--background-secondary);
+  padding: 0;
 
-    font-family: inherit;
-    text-align: center;
-    stroke: var(--title-main);
-    color: var(--title-main);
-    border: none;
-    cursor: pointer;
+  font-family: inherit;
+  text-align: center;
+  stroke: var(--title-main);
+  color: var(--title-main);
+  border: none;
+  cursor: pointer;
 
-    min-width: 209px;
-    height: 44px;
-    margin-bottom: 32px;
+  min-width: 209px;
+  height: 44px;
+  margin-bottom: 32px;
 
-    border-radius: 22px;
+  border-radius: 22px;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    transition: color var(--transition), background-color var(--transition);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  transition: color var(--transition), background-color var(--transition);
 
-    @include mq(tab) {
-        min-width: 186px;
-        margin-left: 14px;
-    }
+  @include mq(tab) {
+    min-width: 186px;
+    margin-left: 14px;
+  }
 }
 
 .header__btn:hover,
 .header__btn--mobile:hover,
 .header__btn:focus,
 .header__btn--mobile:focus {
-
-    background-color: #ECEBEB;
-    color: var(--title-main);
-    fill: var(--title-main);
-    stroke: var(--title-main);
+  background-color: #ecebeb;
+  color: var(--title-main);
+  fill: var(--title-main);
+  stroke: var(--title-main);
 }
 
 .header__btn:hover .btn-icon,
 .header__btn--mobile:hover .btn-icon,
 .header__btn:focus .btn-icon,
 .header__btn--mobile:focus .btn-icon {
- stroke: var(--title-main);
+  stroke: var(--title-main);
 }
 
 .site-nav {
