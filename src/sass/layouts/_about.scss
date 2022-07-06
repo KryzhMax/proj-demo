@@ -94,8 +94,7 @@
   transition: color var(--transition), background-color var(--transition);
 
     @include mq(mob) {
-    display: block;
-    margin-bottom: 20px;
+    margin-top: 20px;
   }
   @include mq(tab-only) {
     display: block;
