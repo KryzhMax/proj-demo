@@ -11,22 +11,18 @@
 }
 
 .card__item {
-  --card-item: 1;
+  @include mq(mob-only) {
+    --card-item: 1;
+    --card-gap: 20px;
+  }
   padding: 40px 32px;
 
   background: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  @include mq(tab) {
-    --card-item: 3;
-  }
+
   @include mq(desc) {
     padding: 40px;
-  }
-}
-.card__item + .card__item {
-  @include mq(mob-only) {
-    margin-top: 20px;
   }
 }
 
