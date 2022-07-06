@@ -211,6 +211,10 @@
   border-radius: 4px;
 }
 
+.franchise__modal {
+  max-width: 450px;
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -259,4 +263,125 @@
   @include mq(tab) {
     margin-left: 14px;
   }
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  font-family: var(--text-ff);
+}
+
+.form__title {
+  margin-bottom: 12px;
+  display: block;
+  @media screen and (max-width: 321px) {
+    @include fonts(14px, 700, 1.2, 0.03em);
+  }
+
+  @include fonts(20px, 700, 1.5, 0.03em);
+
+  @include mq(desc) {
+    @include fonts(20px, 700, 1.15, 0.03em);
+  }
+
+  // font-weight: 700;
+  // font-size: 20px;
+  // line-height: 1.15;
+  text-align: center;
+  // letter-spacing: 0.03em;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+
+  & + & {
+    margin-top: 10px;
+  }
+}
+
+.form__label {
+  margin-bottom: 4px;
+
+  @include fonts($fs: 12px, $fw: 500, $lh: 1.5, $ls: 0.03em);
+
+  @include mq(desc) {
+    @include fonts(null, null, 1.14, null);
+  }
+  // font-weight: 400;
+  // font-size: 12px;
+  // line-height: 1.14;
+
+  // letter-spacing: 0.01em;
+
+  color: var(--grey-text);
+}
+
+.form__wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 11px 42px;
+  border: 1px solid var(--background-mobile);
+  border-radius: 4px;
+
+  cursor: pointer;
+  transition: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: none;
+    border-color: var(--button-hover-color);
+  }
+}
+
+.form__textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px 15px;
+
+  @include fonts(14px, 400, 1.14, 0.01em);
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.01em;
+  border: 1px solid var(--background-mobile);
+  border-radius: 4px;
+  resize: none;
+  transition: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    border-color: var(--button-hover-color);
+  }
+}
+
+.form__textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.button-franchise {
+  display: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--title-ff);
+  @media (max-width: 321px) {
+    margin-top: 5px;
+  }
+  margin-top: 50px;
+
+  //   @include mq(mob-only) {
+  //     margin-top: 10px;
+  //   }
+  // }
 }
