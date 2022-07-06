@@ -1,25 +1,30 @@
 .about {
   background-color: var(--background-main);
   @include mq(desc) {
-    background-image: url(../images/about/milkdesctop.png);
+    background-image: url(../images/about/desk-milk-left.png),
+      url(../images/about/desk-milk-right.png);
     background-repeat: no-repeat;
-    background-position: 0 236px;
-    background-size: 100%;
+    background-position: left 0 top 80px, right 0 top 200px;
+    background-size: 250px;
     @include mq(retina) {
-      background-image: url(../images/about/milkdesctop2x.png);
+      background-image: url(../images/about/desk-milk-left@2x.png),
+        url(../images/about/desk-milk-right@2x.png);
       background-repeat: no-repeat;
-      background-position: 0 236px;
-      background-size: 100%;
+      background-position: left 0 top 236px, right 50 top 236px;
+      background-size: 250px;
     }
   }
   @include mq(mob-only) {
     bottom: 175px;
-    background-image: url(../images/about/milk.png);
+    background-image: url(../images/about/mob-milk-left.png),
+      url(../images/about/mob-milk-right.png);
     background-repeat: no-repeat;
-    background-position: 0 73px;
+    background-size: 100px;
+    background-position: left 0 bottom 73px, right 0 bottom 200px;
     @include mq(retina) {
-      background-image: url(../images/about/milk2x.png);
-      background-size: 100%;
+      background-image: url(../images/about/mob-milk-left@2x.png),
+        url(../images/about/mob-milk-right@2x.png);
+      background-size: 100px;
     }
   }
 }
