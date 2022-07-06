@@ -20,15 +20,13 @@
     @include mq(desc) {
       width: 968px;
       padding: 32px 73px;
-      margin-top: 16px;
     }
   }
 
   .custrev__text {
     @include fonts(12px, 500, 2.6, null);
     margin: auto;
-    width: 157px;
-    // height: 248px;
+    width: 187px;
     text-align: center;
     color: #000000;
     background-position: 0 100%;
@@ -42,20 +40,20 @@
 
     &::before {
       position: absolute;
-      top: 30px;
-      left: 53px;
+      top: 22px;
+      left: 24px;
       content: '';
       display: inline-block;
       width: 54px;
       height: 40px;
       background-image: url(../images/cust-revi/quotes.png);
       @include mq(tab) {
-        left: 16px;
-        top: 20px;
+        left: 0;
+        top: 0;
       }
       @include mq(desc) {
-        top: 32px;
-        left: 72px;
+        top: 15px;
+        left: 70px;
       }
     }
     @include mq(tab) {
@@ -130,6 +128,9 @@
 
   @include mq(mob) {
     padding-top: 120px;
+  }
+  @include mq(desc) {
+    padding-top: 150px;
   }
 }
 
