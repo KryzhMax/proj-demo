@@ -93,9 +93,12 @@
   line-height: 1.28;
   transition: color var(--transition), background-color var(--transition);
 
-  @include mq(tab-only) {
+    @include mq(mob) {
     display: block;
     margin-bottom: 20px;
+  }
+  @include mq(tab-only) {
+    display: block;
   }
 
   @include mq(desc) {
