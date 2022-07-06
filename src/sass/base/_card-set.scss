@@ -4,9 +4,6 @@
   // justify-content: center;
   gap: var(--card-gap);
 
-  @include mq(mob-only) {
-    display: block;
-  }
   @include mq(desc) {
     flex-wrap: nowrap;
   }
