@@ -123,6 +123,7 @@
   max-width: 220px;
   @include mq(tab) {
     max-width: 335px;
+    margin-bottom: 40px;
   }
   @include mq(desc) {
     max-width: 463px;
