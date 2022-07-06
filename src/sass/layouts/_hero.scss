@@ -6,9 +6,31 @@
   padding-top: 193px;
   padding-bottom: 158px;
   z-index: 1;
+
+  @include mq(mob-only) {
+    background-image: url(../images/hero/png/mob/ellipse.png);
+    background-repeat: no-repeat;
+    background-size: 346px;
+    background-position: calc(50% + 43px);
+  }
+
+
   @include mq(tab-only) {
-    padding-top: 100px;
+    padding-top: 110px;
     padding-bottom: 15px;
+    background-image: url(../images/hero/png/tablet/ellipse.png);
+    background-repeat: no-repeat;
+    background-size: 346px;
+    background-position: calc(50% + 16px);
+  }
+
+  @include mq(desc) {
+    background-image: url(../images/hero/png/desctop/ellipse.png);
+    background-repeat: no-repeat;
+    background-size: 534px;
+    background-position: calc(50% + 190px);
+    padding-top: 0;
+    padding-bottom: 40px;
   }
 }
 
@@ -40,20 +62,20 @@
 
 .hero__img {
   position: absolute;
-  left: calc(50% - 20px);
-  top: 92px;
+  left: calc(50% - 40px);
+  top: 85px;
   z-index: -1;
   max-width: 100%;
 
-  //   @include mq(tab-only) {
-  //     left: 322px;
-  //     top: 80px;
-  //   }
+  @include mq(tab-only) {
+    top: 90px;
+  }
 
-  //   @include mq(desc) {
-  //     left: 650px;
-  //     top: 108px;
-  //   }
+  @include mq(desc) {
+    left: calc(50% + 40px);
+    top: 90px;
+
+  }
 }
 
 .hero__img_tasty {
@@ -62,15 +84,15 @@
   @include mq(tab-only) {
     display: block;
     position: absolute;
-    left: 546px;
-    bottom: -15px;
+    left: calc(50% + 151px);
+    bottom: 0;
   }
 
   @include mq(desc) {
     display: block;
     position: absolute;
-    right: 15px;
-    bottom: -60px;
+    left: calc(50% + 290px);
+    bottom: 0;
   }
 }
 
@@ -88,7 +110,7 @@
   color: var(--background-secondary);
   width: 218px;
   max-width: 100%;
-  height: 106px;
+  // height: 106px;
   text-transform: uppercase;
   margin-bottom: 20px;
 
@@ -131,7 +153,7 @@
   display: flex;
 
   @include mq(mob-only) {
-    margin-top: 125px;
+    // margin-top: 125px;
   }
 }
 
@@ -139,6 +161,7 @@
   @include mq(mob-only) {
     display: none;
   }
+
   display: flex;
   margin-left: 0;
   margin-right: auto;
@@ -318,7 +341,8 @@
     line-height: 1.29;
   }
 
-  transition: color var(--transition), background-color var(--transition);
+  transition: color var(--transition),
+  background-color var(--transition);
 }
 
 .hero__button_products:hover,
@@ -352,7 +376,8 @@
     line-height: 1.29;
   }
 
-  transition: color var(--transition), background-color var(--transition);
+  transition: color var(--transition),
+  background-color var(--transition);
 }
 
 .hero__button_arrow {
@@ -378,12 +403,10 @@
 
   @include mq(tab-only) {
     display: block;
-    position: absolute;
     margin-left: 0;
-    left: 184px;
-    top: 342px;
     width: 18px;
     height: 18px;
+    margin-top: 7px;
   }
 
   @include mq(desc) {
@@ -396,11 +419,6 @@
 .hero__button_made:hover,
 .hero__button_made:focus {
   background-color: #ecebeb;
-  // color: var(--title-main);
-  // fill: var(--title-main);
-  // background-color: var(--title-main);
-  // color: var(--background-secondary);
-  // fill: var(--background-secondary);
 }
 
 .hero__button_arrow:hover,
