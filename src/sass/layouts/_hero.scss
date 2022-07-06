@@ -326,6 +326,9 @@
   color: var(--background-secondary);
   border: none;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 62px;
   height: 24px;
   border-radius: 20px;
@@ -334,6 +337,7 @@
   line-height: 1.31;
 
   @include mq(desc) {
+    display: flex;
     width: 107px;
     height: 40px;
     border-radius: 20px;
@@ -360,6 +364,9 @@
   text-align: center;
   color: var(--title-main);
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   min-width: 83px;
   height: 24px;
