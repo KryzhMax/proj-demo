@@ -95,6 +95,7 @@
 
   @include mq(tab-only) {
     display: block;
+    margin-bottom: 20px;
   }
 
   @include mq(desc) {
