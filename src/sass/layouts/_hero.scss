@@ -8,29 +8,52 @@
   z-index: 1;
 
   @include mq(mob-only) {
-    background-image: url(../images/hero/png/mob/ellipse.png);
+    background-image: url(../images/hero/mob/ellipse.webp);
     background-repeat: no-repeat;
     background-size: 346px;
     background-position: calc(50% + 43px);
   }
-
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-moz-min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (min-resolution: 192dpi),
+    screen and (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url(../images/hero/mob/ellipse@2x.webp);
+  }
 
   @include mq(tab-only) {
     padding-top: 110px;
     padding-bottom: 15px;
-    background-image: url(../images/hero/png/tablet/ellipse.png);
+    background-image: url(../images/hero/tablet/ellipse.webp);
     background-repeat: no-repeat;
     background-size: 346px;
     background-position: calc(50% + 16px);
   }
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-moz-min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (min-resolution: 192dpi),
+    screen and (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url(../images/hero/tablet/ellipse@2x.webp);
+  }
 
   @include mq(desc) {
-    background-image: url(../images/hero/png/desctop/ellipse.png);
+    background-image: url(../images/hero/desctop/ellipse.webp);
     background-repeat: no-repeat;
     background-size: 534px;
     background-position: calc(50% + 190px);
     padding-top: 0;
     padding-bottom: 40px;
+  }
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-moz-min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (min-resolution: 192dpi),
+    screen and (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url(../images/hero/desctop/ellipse@2x.webp);
   }
 }
 
@@ -74,7 +97,6 @@
   @include mq(desc) {
     left: calc(50% + 40px);
     top: 90px;
-
   }
 }
 
@@ -286,8 +308,7 @@
   }
 }
 
-.hero__text_number-16,
-.hero__text_number-23 {
+.hero__text_number {
   @include mq(tab) {
     font-family: Titan One;
     font-style: normal;
@@ -345,8 +366,7 @@
     line-height: 1.29;
   }
 
-  transition: color var(--transition),
-  background-color var(--transition);
+  transition: color var(--transition), background-color var(--transition);
 }
 
 .hero__button_products:hover,
@@ -383,8 +403,7 @@
     line-height: 1.29;
   }
 
-  transition: color var(--transition),
-  background-color var(--transition);
+  transition: color var(--transition), background-color var(--transition);
 }
 
 .hero__button_arrow {
