@@ -93,7 +93,7 @@
   line-height: 1.28;
   transition: color var(--transition), background-color var(--transition);
 
-    @include mq(mob) {
+  @include mq(mob) {
     margin-top: 20px;
   }
   @include mq(tab-only) {
