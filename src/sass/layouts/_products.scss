@@ -1,34 +1,3 @@
-.products__pre-title {
-  @include fonts(18px, 400, 1.16, null);
-  font-family: 'Titan One';
-  font-style: normal;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--title-secondary);
-
-  @include mq(tab) {
-    @include fonts(26px, 400, 1.15, null);
-  }
-  @include mq(desc) {
-    @include fonts(30px, 400, 1.1333, 0.04em);
-  }
-}
-
-.products__title {
-  @include fonts(34px, 400, 1.147, 0.04em);
-  font-family: 'Titan One';
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--title-main);
-  @include mq(tab) {
-    @include fonts(48px, 400, 1.145, 0.04em);
-  }
-  @include mq(desc) {
-    @include fonts(58px, 400, 1.138, 0.06em);
-    margin-top: 16px;
-  }
-}
-
 .products__list {
   display: flex;
   align-items: flex-start;
