@@ -275,6 +275,7 @@
 .form__title {
   margin-bottom: 12px;
   display: block;
+  font-family: var(--title-ff);
   @media screen and (max-width: 321px) {
     @include fonts(14px, 700, 1.2, 0.03em);
   }
